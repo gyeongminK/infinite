@@ -42,7 +42,7 @@ const userSchema = mongoose.Schema({
         minglength: 1
     },
 
-    //대학명
+    //지역
     school: {
         type:String,
         minglength: 1

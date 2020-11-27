@@ -219,15 +219,25 @@ function RegisterPage(props) {
             
 
             <br/><br/>
-            <span className="right">학교: &nbsp;</span>
+            <span className="right">지역: &nbsp;</span>
             <Field
               className="field"
               name="school"
-              type="text"
+              as="select"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.school}
-            />
+            >
+              <option value="서울">서울</option>
+              <option value="경기">경기</option>
+              <option value="경북">경북</option>
+              <option value="경남">경남</option>
+              <option value="전북">전북</option>
+              <option value="전남">전남</option>
+              <option value="충북">충남</option>
+              <option value="강원">강원</option>
+              <option value="기타">기타</option>
+            </Field>
             {errors.school && touched.school}
             
 
